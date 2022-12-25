@@ -6,7 +6,9 @@
   "author": "rawat-shashank <shashank17nov@gmail.com>",
   "homepage": "https://github.com/rawat-shashank/theBoringUI/tree/main/packages/ui-comp-text#readme",
   "license": "ISC",
-  "main": "lib/ui-comp-text.js",
+  "main": "dist/ui-comp-text.cjs.js",
+  "module": "dist/ui-comp-text.esm.js",
+  "src": "lib/ui-comp-text.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

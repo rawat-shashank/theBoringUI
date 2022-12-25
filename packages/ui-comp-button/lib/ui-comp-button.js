@@ -1,3 +1,19 @@
-const Button = ({children }) => <button>{children}</button>;
+import cx from 'clsx';
+import styles from './styles.css';
 
-export { Button }
+const Button = ({ children, className, variant, ...rest }) => {
+  const classes = cx(
+    styles.Button,
+    {
+      [styles.ButtonSecondary]: variant === 'secondary',
+    },
+    className
+  );
+  return (
+    <button {...rest} className={classes}>
+      {children}
+    </button>
+  );
+};
+
+export { Button };

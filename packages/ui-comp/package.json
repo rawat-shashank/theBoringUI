@@ -6,12 +6,15 @@
   "author": "rawat-shashank <shashank17nov@gmail.com>",
   "homepage": "https://github.com/rawat-shashank/theBoringUI/tree/main/packages/ui-comp#readme",
   "license": "ISC",
-  "main": "lib/ui-comp.js",
+  "main": "dist/ui-comp.cjs.js",
+  "module": "dist/ui-comp.esm.js",
+  "src": "lib/ui-comp.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
+    "dist",
     "lib"
   ],
   "publishConfig": {
